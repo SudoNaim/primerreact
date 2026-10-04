@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Saludos from './componets/Saludos';
+import Metodos from './componets/Metodos';
+import SumarNumeros from './componets/SumarNumeros'
+import SaludoPadre from './componets/SaludoPadre';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Saludos nombre = "Naim"></Saludos>
+    <Metodos></Metodos>
+    <SumarNumeros numero1 = "10" numero2 = "3"></SumarNumeros>
+    <SaludoPadre></SaludoPadre>
   </React.StrictMode>
 );
 

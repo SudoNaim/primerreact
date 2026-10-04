@@ -1,6 +1,12 @@
-function Saludos () {
+function Saludos (props) {
+    let daydate = "Domingo";
+    let nombreProp = props.nombre;
+
     return (
-        <h1>Hola que tal</h1>
+        <div>
+            <h1>Hola buenas hoy es {daydate}</h1>
+            <h2>¡Espero que tengas un buen día {nombreProp}!</h2>
+        </div>
     )
 }
 export default Saludos;
